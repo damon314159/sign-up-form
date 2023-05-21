@@ -9,54 +9,62 @@
 </head>
 <body>
   <div class = "image-banner">
-    <img src="" alt="Background-image">
+    <img src="./img/banner-bg.jpg" alt="Background-image">
     <div class="logo">
-      <p>
-        Lorem Labs
-        <img src="" alt="Logo-image">
-      </p>
+      <p>Lorem Labs</p>
+      <img src="./img/logo.png" alt="Logo-image">
     </div>
-    <footer>Photo by __ on __</footer>
+    <footer>Photo by <a href="https://unsplash.com/@nasa?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">NASA</a> on <a href="https://unsplash.com/photos/Q1p7bh3SHj8?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+    </footer>
   </div>
 
-  <div class="content">
-    <p class="info">This is a mock up page to practice on! It's not real. But you still want to sign up, right? This will help realize your wildest dreams.<br> "You got that James Dean daydream look in your eye,
-      and I got that red lip classic thing that you like..." - Taylor Swift</p>
-    <p class="call-to-action">Let's get started!</p>    
-  </div>
+  <div class="main">
 
-  <div class="form-container">
-    <p class="form-heading">Sign-Up Now!</p>
-    <form action="" method="post" id="sign-up-form">
-      <div class="input-box">
-        <label for="first-name">First name</label>
-        <input type="text" name="first-name" id="first-name">
+    <div class="content">
+      <p class="info">This is a mock up page to practice on! It's not real. But you still want to sign up, right? This will help realize your wildest dreams.<br> "You got that James Dean daydream look in your eye,
+        and I got that red lip classic thing that you like..." - Taylor Swift</p>
+      <p class="call-to-action">Let's get started!</p>
+    </div>
+
+    <div class="form-pane">
+
+      <div class="form-container">
+        <p class="form-heading">Sign-Up Now!</p>
+        <form action="" method="post" id="sign-up-form">
+          <div class="input-box">
+            <label for="first-name">First name</label>
+            <input type="text" name="first-name" id="first-name">
+          </div>
+          <div class="input-box">
+            <label for="last-name">Last name</label>
+            <input type="text" name="last-name" id="last-name">
+          </div>
+          <div class="input-box">
+            <label for="email-adr">Email</label>
+            <input type="email" name="email-adr" id="email-adr">
+          </div>
+          <div class="input-box">
+            <label for="phone">Phone number</label>
+            <input type="tel" name="phone" id="phone">
+          </div>
+          <div class="input-box">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+          </div>
+          <div class="input-box">
+            <label for="confirm-password">Confirm password</label>
+            <input type="password" name="confirm-password" id="confirm-password">
+          </div>
+        </form>
       </div>
-      <div class="input-box">
-        <label for="last-name">Last name</label>
-        <input type="text" name="last-name" id="last-name">
+
+      <div class="control-panel">
+        <button type="submit" form="sign-up-form" value="Submit">Create Account</button>
+        <p class="already-have-acc">Already have an account? <a href="example-root/pages/log-in.html">Log in</a></p>
       </div>
-      <div class="input-box">
-        <label for="email-adr">Email</label>
-        <input type="email" name="email-adr" id="email-adr">
-      </div>
-      <div class="input-box">
-        <label for="phone">Phone number</label>
-        <input type="tel" name="phone" id="phone">
-      </div>
-      <div class="input-box">
-        <label for="password">Password</label>
-        <input type="password" name="password" id="password">
-      </div>
-      <div class="input-box">
-        <label for="confirm-password">Confirm password</label>
-        <input type="password" name="confirm-password" id="confirm-password">
-      </div>
-    </form>
-  </div>
-  <div class="control-panel">
-    <button type="submit" form="sign-up-form" value="Submit">Create Account</button>
-    <p>Already have an account? <a href="example-root/pages/log-in.html">Log in</a></p>
+
+    </div>
+
   </div>
 
 </body>
