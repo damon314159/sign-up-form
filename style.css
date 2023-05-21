@@ -154,7 +154,10 @@ form {
 
 .input-box input {
   padding: 10px;
-  border: 1px solid #ccc;
+  box-sizing: border-box;
+  height: 36px;
+  width: 200px;
+  border: 2px solid var(--primary-color-dark);
   border-radius: 3px;
 }
 
@@ -188,4 +191,18 @@ form {
 .already-have-acc a:hover {
   text-decoration: underline;
   color: var(--accent-color-dark);
+}
+
+/* Form pseudo classes */
+.input-box:nth-child(5) input:invalid,
+.input-box:nth-child(6) input:invalid {
+  border: 2px solid palevioletred;
+}
+
+#sign-up-form input:focus,
+#sign-up-form input:focus-visible,
+#sign-up-form input:focus-within {
+  border: 2px solid var(--accent-color-dark);
+  outline: 0;
+  box-shadow: 2px 2px 2px #333333;
 }
