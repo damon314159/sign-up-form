@@ -11,6 +11,7 @@
 
   /* Background and text colors */
   --background-color: #d8d8d8;
+  --wide-monitor-edges: #333333;
   --text-color-dark: #242c3a;
   --text-color-light: #ade6f8;
 }
@@ -27,17 +28,18 @@ html {
 body {
   min-height: 100%;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: var(--background-color);
+  background-color: var(--wide-monitor-edges);
   color: var(--text-color-dark);
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: center;
 }
 
 .image-banner {
-  flex: 1 1 auto;
+  flex: 0 1 auto;
   height: 100vh;
-  max-width: 35%;
+  width: 40%;
+  max-width: 400px;
   overflow: hidden;
   position: relative;
 }
@@ -62,13 +64,16 @@ body {
 }
 
 .logo img {
-  width: 100px;
+  width: 140px;
   height: auto;
+  margin: 8px;
 }
 
 .logo p {
   margin: 0;
-  font-size: 36px;
+  font-size: 40px;
+  text-align: center;
+  font-family: 'Bebas Neue', sans-serif;
 }
 
 .image-banner footer {
@@ -85,10 +90,14 @@ body {
 }
 
 .main {
+  flex: 0 2 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
+  height: 100vh;
+  padding: 0 16px;
+  background-color: var(--background-color);
 }
 
 .content {
@@ -111,9 +120,11 @@ body {
   max-width: 600px;
   margin: 8px;
   padding: 20px;
+  border: 1px solid var(--primary-color-dark);
   border-radius: 8px;
   background-color: var(--primary-color);
   color: var(--text-color-light);
+  box-shadow: 2px 2px 4px #333333;
 }
 
 .form-heading {
@@ -153,7 +164,7 @@ form {
 }
 
 .control-panel button {
-  padding: 10px 20px;
+  padding: 10px 30px;
   background-color: var(--accent-color);
   color: #fff;
   border: none;
@@ -166,9 +177,7 @@ form {
 }
 
 .already-have-acc {
-  text-align: center;
-  margin-top: 20px;
-  margin-right: 5px;
+  margin: 10px 5px;
 }
 
 .already-have-acc a {
